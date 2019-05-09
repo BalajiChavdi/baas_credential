@@ -30,6 +30,7 @@ admin                qnc-engdata1vs1:/vol/ges02/admin
 agent-smith          qnc-engdata1vs1:/vol/projects01/agent-smith
 apollo-web           qnc-engdata1vs1:/vol/tools01/web
 archive-dev_x_junos-1 qnc-engdata1vs1:/junos/junos_dev_x_junos_1
+archive-evo-release  qnc-engdata1vs1:/evo/evo_release
 archive-je_storage1  qnc-engdata1vs1:/junos_eng/je_storage1
 archive-je_storage2  qnc-engdata1vs1:/junos_eng/je_storage2
 archive-junos-10.0   qnc-engdata1vs1:/junos/junos_10_0
@@ -492,6 +493,7 @@ archive-junos-16.1   qnc-engdata1vs1:/junos/junos_16_1
 archive-junos-16.1-d01 qnc-engdata1vs1:/junos/archive_junos_16_1_d01
 archive-junos-16.1-r1 qnc-engdata1vs1:/junos/junos_16_1_r1
 archive-junos-18.2   qnc-engdata1vs1:/junos/junos_18_2
+archive-junos-18.2-d01 svl-engdata1vs1:/junos/archive-junos-18.2-d01
 archive-junos-5.1    qnc-engdata1vs1:/junos/symphony/5.1
 archive-junos-8.4    qnc-engdata1vs1:/junos/junos_8_4
 archive-junos-8.5    qnc-engdata1vs1:/junos/junos_8_5
@@ -838,11 +840,6 @@ archive-junos-toolchain qnc-engdata1vs1:/vol/tools2/toolchain_archives
 archive-junos-trinity qnc-engdata1vs1:/junos/symphony/trinity
 archive-junos-uboot  qnc-engdata1vs1:/junos/junos_ib/uboot
 archive-junos-vee_jasper_ph1 qnc-engdata1vs1:/junos_eng/je_storage2/vee_jasper_ph1
-archive-junos-w1_121_mobility qnc-engdata1vs1:/mobilenext/w1_121_mobility
-archive-junos-w2_114_mobility qnc-engdata1vs1:/mobilenext/w2_114_mobility
-archive-junos-w2_121_mobility qnc-engdata1vs1:/mobilenext/w2_121_mobility
-archive-junos-w_114_mobility qnc-engdata1vs1:/mobilenext/w_114_mobility
-archive-junos-w_121_mobility qnc-engdata1vs1:/mobilenext/w_121_mobility
 archive-junos-wamboldtest qnc-engdata1vs1:/junos/junos_dev_x_junos_1/wamboldtest
 archive-junos-x_141_x53_jweb qnc-engdata1vs1:/junos/junos_dev_x_junos_1/x_141_x53_jweb
 archive-junos-x_141_x55_prod qnc-engdata1vs1:/rbu_store/dev_x_141_x55_prod
@@ -866,6 +863,7 @@ automation           qnc-engdata1vs1:/vol/automation
 b5-fbsd-mirror       qnc-engdata1vs1:/vol/b5_fbsd_mirror
 baas-scratch         qnc-engdata5vs1:/vol/baas_scratch
 baas_devops          qnc-engdata1vs1:/vol/baas_devops
+baas_jenkins         qnc-engdata1vs1:/vol/baas_jenkins
 bastion              qnc-engdata1vs1:/vol/bastion/bastion
 belvedere            qnc-engdata1vs1:/vol/projects08/belvedere
 bng-ci-prod01-b      bng-ci-prod01:/b
@@ -896,6 +894,9 @@ cbuild-archive       qnc-engdata1vs1:/vol/builds03/cbuild-archive
 cd                   qnc-engdata1vs1:/vol/cd
 cddb                 qnc-engdata1vs1:/vol/tools01/misc/cddb
 che1                 qnc-engdata1vs1:/vol/projects02/che1
+ci-daily01           qnc-engdata1vs1:/ci/ci_daily01
+ci-daily02           qnc-engdata1vs1:/ci/ci_daily02
+ci-daily03           qnc-engdata1vs1:/ci/ci_daily03
 cmts                 qnc-engdata1vs1:/vol/projects02/cmts
 cmtsbuild            qnc-engdata1vs1:/vol/builds03/cmtsbuild
 compat_48            qnc-engdata1vs1:/vol/local01/freebsd-bin/compat_48
@@ -944,8 +945,10 @@ engtech-qnc-bkp-1    qnc-engdata5vs1:/vol/engtech_qnc_bkp_1
 epmd_recovery        qnc-engdata1vs1:/vol/epmd_recovery_dwinters/epmd_recovery
 evo                  qnc-engdata1vs1:/evo/evo_001
 evo-files            qnc-engdata5vs1:/vol/evo_files
+evo-images           qnc-engdata1vs1:/evo/evo_images
 evo-publishes        qnc-engdata5vs2:/evo/evo_publishes
 evo-systest          qnc-engdata1vs1:/vol/evo_systest/evo-systest
+evo-systest-images   qnc-engdata1vs1:/evo/evo_systest_images
 evo_002              qnc-engdata1vs1:/evo/evo_002
 evo_003              qnc-engdata1vs1:/evo/evo_003
 evo_backups          qnc-engdata1vs1:/evo/evo_backup
@@ -1039,7 +1042,6 @@ manhattan            qnc-engdata1vs1:/vol/projects02/manhattan
 metrics_archive      qnc-engdata1vs1:/vol/metrics_archive/metrics_archive
 mmi                  qnc-engdata1vs1:/vol/tools01/mmi
 mmi_proj             qnc-engdata1vs1:/vol/projects03/mmi_proj
-mobilenext           qnc-engdata1vs1:/mobilenext/mobile_next/mobilenext
 neo                  qnc-engdata1vs1:/vol/projects01/neo
 netinstall           qnc-engdata1vs1:/vol/ges03/netinstall/$OSNAME
 nexsi-info           qnc-engdata1vs1:/vol/projects01/nexsi-info
@@ -1098,6 +1100,9 @@ pubs-cdrom           qnc-engdata1vs1:/vol/techpubs03/pubs-cdrom
 pubs-doceng          qnc-engdata1vs1:/vol/techpubs04/pubs-doceng
 python               qnc-engdata1vs1:/vol/python
 qfx-store01          qnc-engdata1vs1:/fsg_builds/qfx_store01
+qfx-store02          qnc-engdata5vs1:/fsg_builds/qfx_store02
+qfx-store03          qnc-engdata5vs1:/fsg_builds/qfx_store03
+qfx-store05          qnc-engdata5vs2:/fsg_builds/qfx_store05
 qnc-btools-support01-b qnc-btools-support01:/b
 qnc-btools-support02-b qnc-btools-support02:/b
 qnc-cd-prod03-b      qnc-cd-prod03:/b
@@ -1256,6 +1261,7 @@ qosmos-svn           qnc-engdata1vs1:/scm_store/qosmos01/qosmos-svn
 radware              qnc-engdata1vs1:/vol/radware/radware
 rbu-logs             qnc-engdata1vs1:/junos/rbu_logs
 rbu_integration_scripts qnc-engdata1vs1:/vol/eabu_integration_scripts
+rchive-junos-18.2-d01 qnc-engdata1vs1:/junos/junos_18_2_d01
 real_netinstall      qnc-engdata1vs1:/vol/ges03/netinstall
 recluse-httpd        qnc-engdata1vs1:/vol/recluse/recluse-httpd
 regress-tools-tmp    qnc-engdata1vs1:/vol/eng_project15/regress-tools-tmp
